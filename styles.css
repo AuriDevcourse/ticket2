@@ -22,7 +22,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #111111;
+    background: none;
     color: #ffffff;
     line-height: 1.5;
     padding: 2rem;
@@ -44,7 +44,7 @@ body {
 }
 
 .ticket-card {
-    background: rgba(29, 31, 32, 0.3) radial-gradient(rgba(255, 255, 255, 0.1) 10%, transparent 1%);
+    background: rgba(17, 17, 17, 0.9) radial-gradient(rgba(255, 255, 255, 0.1) 10%, transparent 1%);
     background-size: 10px 10px;
     border-radius: 20px;
     border: 1px solid rgba(242, 242, 242, 0.5) !important;
@@ -619,4 +619,11 @@ tito-overlay .tito-overlay-button:hover {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.non-refundable-note {
+    margin-top: 1rem;
+    font-size: 9px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
 }
