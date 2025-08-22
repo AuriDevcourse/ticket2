@@ -119,6 +119,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
 }
 
 .title {
@@ -630,4 +632,97 @@ tito-overlay .tito-overlay-button:hover {
     font-size: 9px;
     text-align: left;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.ribbon {
+    position: absolute;
+    top: 140px !important;
+    left: 90px !important;
+    transform: rotate(45deg);
+    transform-origin: right top;
+    width: 220px;
+    padding: 7px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #FF3355 0%, #FF0028 100%);
+    color: #ffffff;
+    font-family: 'Archivo Expanded', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: 0 6px 16px rgba(255, 0, 40, 0.35);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Keep the ribbon attached to the card on tablets */
+@media (max-width: 1024px) {
+  .ticket-card .ribbon {
+    display: none !important;
+  }
+}
+
+/* Keep the ribbon attached to the card on mobiles */
+@media (max-width: 768px) {
+  .ticket-card .ribbon {
+    top: 100px !important;
+    left: 160px !important;
+    width: 195px;
+    font-size: 12px;
+  }
+}
+
+/* Desktop and large screens: same corner placement with more span for visibility (e.g., 1440px) */
+@media (min-width: 1200px) {
+  .ticket-card .ribbon {
+    top: 6px;
+    left: -18px;
+    transform: rotate(45deg);
+    transform-origin: right top;
+    width: 260px;
+    font-size: 15px;
+  }
+}
+
+/* Small triangular tails for nicer edge finish */
+.ribbon::before,
+.ribbon::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.ribbon::before {
+    left: 0;
+    border-width: 10px 10px 0 0;
+    border-color: rgba(255, 0, 40, 0.6) transparent transparent transparent;
+}
+
+.ribbon::after {
+    right: 0;
+    border-width: 10px 0 0 10px;
+    border-color: rgba(255, 0, 40, 0.6) transparent transparent transparent;
+}
+
+.sold-out-button {
+    position: relative;
+    padding: 12px 20px !important;
+    border-radius: 12px;
+    border: 0 !important;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Archivo Expanded', sans-serif;
+    background: linear-gradient(135deg, #FF3355 0%, #FF0028 100%) !important;
+    color: #ffffff !important;
+    cursor: not-allowed;
+    width: 100%;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 16px rgba(255, 0, 40, 0.35);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
