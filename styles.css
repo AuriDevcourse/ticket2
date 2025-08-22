@@ -637,7 +637,7 @@ tito-overlay .tito-overlay-button:hover {
 .ribbon {
     position: absolute;
     top: 140px !important;
-    left: 90px !important;
+    left: 98px !important;
     transform: rotate(45deg);
     transform-origin: right top;
     width: 220px;
