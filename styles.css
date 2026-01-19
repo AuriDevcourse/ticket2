@@ -183,27 +183,27 @@ body {
 
 .price-subtitle-icon {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     margin-right: 0.5rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
-    filter: brightness(0) invert(1);
+    filter: brightness(1.2) invert(1);
     vertical-align: middle;
 }
 
 .time-icon {
-    background-image: url('time.png');
+    background-image: url('time.webp');
 }
 
 .group-icon {
-    background-image: url('group.png');
+    background-image: url('group.webp');
 }
 
 .who-icon {
-    background-image: url('who.png');
+    background-image: url('who.webp');
 }
 
 .features {
