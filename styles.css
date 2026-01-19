@@ -190,20 +190,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
-    filter: brightness(1.2) invert(1);
+    filter: brightness(0) invert(1) brightness(1.2);
     vertical-align: middle;
 }
 
 .time-icon {
-    background-image: url('time.webp');
+    background-image: url('time.png');
 }
 
 .group-icon {
-    background-image: url('group.webp');
+    background-image: url('group.png');
 }
 
 .who-icon {
-    background-image: url('who.webp');
+    background-image: url('who.png');
 }
 
 .features {
